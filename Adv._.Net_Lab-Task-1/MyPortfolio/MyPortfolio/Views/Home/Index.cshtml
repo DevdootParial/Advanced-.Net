@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Welcome to My Portfolio!</h1>
+
+@foreach (var item in ViewBag.Person)
+{
+    <h4>Name: @item.PersonName</h4>
+    <h4>Email: @item.PersonEmail</h4>
+    <h4>Phone: @item.PersonPhoneNumber</h4>
+    <h4>Degree: @item.PersonDegree</h4>
+    <h4>Expertise: @item.PersonExpertise</h4>
+}
